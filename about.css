@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(./image/vecteezy_mysterious-woman-in-dark-veil-a-dramatic-portrait_57361924.jpg);
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  /* background: yellowgreen; */
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  font-size: 25px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+}
+.navbar a {
+  font-size: 20px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+.navbar a:hover,
+.navbar a.active {
+  color: #00abf0;
+  border-bottom: 2px solid #00abf0;
+}
+.search-bar input {
+  width: 300px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  border: 2px solid #081b29;
+  background-color: #081b29;
+  outline: none;
+}
+.search-bar input[type] {
+  padding-left: 40px;
+  color: white;
+}
+.search-bar i {
+  position: relative;
+  z-index: 3;
+  margin-right: -40px;
+  color: #00abf0;
+  border-right: 2px solid #00abf0;
+  padding-right: 10px;
+}
+.search-bar button {
+  width: 100px;
+  position: absolute;
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 15px;
+  height: 30px;
+  background: #00abf0;
+  border: none;
+}
+.search-bar button:hover {
+  color: #00abf0;
+  background: #081b29;
+  border: 2px solid #00abf0;
+  transition: 1s;
+  letter-spacing: 1px;
+}
+.search-bar button:hover::before {
+  width: 100%;
+}
+
+.footer img {
+  margin-top: 20px;
+  margin-left: -50px;
+  border-radius: 50%;
+  border: 2px solid #00abf0;
+
+  margin-bottom: 30px;
+}
+
+.footer {
+  display: flex;
+  padding-left: 600px;
+  padding-top: 100px;
+
+  width: 110px;
+}
+.footer h2 {
+  color: white;
+}
+.footer h2 {
+  font-family: sans-serif;
+  position: absolute;
+  top: 350px;
+  left: 530px;
+}
+.footer h2:hover {
+  border-right: 2px solid #00abf0;
+  border-left: 2px solid #00abf0;
+  transform: scale(1.1);
+  padding-bottom: 10px;
+  transition: 1s all ease;
+  padding: 0 10px;
+  color: #00abf0;
+}
+.footer p {
+  position: absolute;
+  color: white;
+  top: 400px;
+  left: 230px;
+  width: 870px;
+}
+.btn-box {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  height: 30px;
+  position: absolute;
+  top: 500px;
+  left: 500px;
+  /* background: yellowgreen; */
+}
+.btn-box a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 150px;
+  height: 100%;
+  background: #00abf0;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  font-size: 19px;
+  color: #081b29;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.btn-box a:hover {
+  color: #00abf0;
+}
+.btn-box a:nth-child(2) {
+  background: transparent;
+  color: #00abf0;
+}
+.btn-box a:nth-child(2)::before {
+  background-color: #00abf0;
+}
+.btn-box a:nth-child(2):hover {
+  color: #081b29;
+}
+.btn-box a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #081b29;
+  z-index: -1;
+  transition: 0.5s;
+}
+.btn-box a:hover::before {
+  width: 100%;
+}
